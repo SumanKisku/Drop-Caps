@@ -1,0 +1,43 @@
+/* Basic styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 600px;
+    background-color: #fff;
+    color: #505050;
+}
+
+
+/* Drop Caps styling */
+
+p {
+    float: left;
+    line-height: 18px;
+}
+
+p::first-letter {
+    color: darkred;
+    font-size: 48px;
+    line-height: 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+    p::first-letter {
+        font-size: 32px;
+    }
+}
